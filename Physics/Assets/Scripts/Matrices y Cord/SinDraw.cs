@@ -17,7 +17,7 @@ public class SinDraw : MonoBehaviour
     {
         for (int i = 0; i < nSamples; i++)
         {
-            var child = Instantiate(prefab, transform);
+         Instantiate(prefab, transform);
         }   
     }
 
