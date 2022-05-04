@@ -33,8 +33,8 @@ public class Tree : MonoBehaviour
         {
             var branch = frontier.Dequeue();
 
-            var leftBranch = CreateBranch(branch, -45);
-            var rightBranch = CreateBranch(branch, 45);
+            var leftBranch = CreateBranch(branch, Random.Range(10f, 20f));
+            var rightBranch = CreateBranch(branch, Random.Range(-10f, -20f));
 
             leftBranch.name = "Left Branch";
             rightBranch.name = "Right Branch";
